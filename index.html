@@ -1,172 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>FrontEnd Store</title>
+    <meta name="description" content="Curriculum Pablo Soto De Carlo Web Developer">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, Angular, NodeJs, Express, Redux, PHP, Laravel, Unity, PhotoShop, Illustrator, After Efects, Blender">
+    <meta name="author" content="Pablo Andres Soto De Carlo">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum Pablo Soto</title>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="img/logo.png" alt="Logotipo">
-        </a>
+    <header class="menu">
+        <nav class="menu__navegacion">
+            <a href="#">Inicio</a>
+            <a href="#">Proyectos</a>
+            <a href="#">contacto</a>
+        </nav>
     </header>
-    <nav class="navegacion">
-                <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
-                <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
-    </nav>
-    <main class="contenedor">
-        <h1>Nuestros Productos</h1>
-        <div class="grid">
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">VueJS</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/2.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">Angular JS</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/3.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">React</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/4.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">Redux</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/5.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">NodeJs</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/6.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">SaSS</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/7.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">HTML5</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/8.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">GitHub</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/9.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">Vulma CSS</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/10.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">TypeScript</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/11.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">Drupal</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/12.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">JavaScript</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/13.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">GraphQL</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-
-            <div class="producto">
-                <a href="producto.html">
-                    <img class="producto__imagen" src="img/14.jpg" alt="imagen camisa">
-                    <span class="producto__informacion">
-                        <p class="producto__nombre">WordPress</p>
-                        <p class="producto__precio">$25</p>
-                    </span>
-                </a>
-            </div> <!-- FIN PRODUCTO -->
-            <div class="grafico grafico--camisa"></div>
-            <div class="grafico grafico--node"></div>
-        </div>
-    </main>
-    <footer class="footer">
-        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
-    </footer>
+    <!-- se carga el contenedor principal de todo el sitio -->
+    <div class="contenedor">
+        <!-- Cargo informacion resumida de mi -->
+        <div class="contenedor__primero">
+            <div class="contenedor__primero__imagen">
+                <img src="img/imagen1.jpg" alt="Banner Uno">
+            </div>
+            <div class="contenedor__primero__info">
+                <h2>Pablo Andrés Soto De Carlo</h2>
+                <h2>27 años de edad</h2>
+                <h2>pablo@sotosanteliz.com</h2>
+                <h2>
+                    <a href="https://wa.me/50683014452">+506 8301-4452</a>
+                </h2>
+                <h2>Costa Rica</h2>
+            </div>
+        </div> <!-- fin primer contenedor -->
+        <div class="contenedor__primero">
+            <div class="contenedor__primero__imagen">
+                <img src="img/imagen1.jpg" alt="Banner Uno">
+            </div>
+            <div class="contenedor__primero__info">
+                <h2>Pablo Andrés Soto De Carlo</h2>
+                <h2>27 años de edad</h2>
+                <h2>pablo@sotosanteliz.com</h2>
+                <h2>
+                    <a href="https://wa.me/50683014452">+506 8301-4452</a>
+                </h2>
+                <h2>Costa Rica</h2>
+            </div>
+        </div> <!-- fin primer contenedor -->
+    </div>
+    <h1>Pablo Soto CV</h1>
 </body>
 </html>
