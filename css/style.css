@@ -1,0 +1,70 @@
+:root{
+    --primario: #fff;
+    --secundario: #57A5FF;
+    --tercero: #E0844E;
+    --terceroOscuro: #b45a25;
+    --cuarto: #8A4AE0;
+
+    --fuentePrincipal: 'Poppins', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/*Globales*/
+body{
+    background: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.contenedor{
+    max-width: 128rem;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    color: var(--secundario)
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+/* header */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.menu__navegacion a{
+    text-decoration: none;
+    border: 1px solid var(--tercero);
+    background-color: var(--primario);
+    color: #494949;
+    padding: 1rem 3rem;
+}
+.menu__navegacion a:hover{
+    background-color: var(--terceroOscuro);
+    color: var(--primario);
+}
