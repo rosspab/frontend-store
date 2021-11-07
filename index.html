@@ -18,13 +18,13 @@
 <body>
     <header class="menu">
         <nav class="menu__navegacion">
-            <a href="#">Inicio</a>
-            <a href="#">Proyectos</a>
-            <a href="#">contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">contacto</a>
         </nav>
     </header>
     <!-- se carga el contenedor principal de todo el sitio -->
-    <div class="contenedor">
+    <div class="contenedor" id="inicio">
         <h1>Pablo Soto CV</h1>
         <!-- Cargo informacion resumida de mi -->
         <div class="contenedor__primero">
@@ -41,45 +41,49 @@
                 <h2>Costa Rica</h2>
             </div>
         </div> <!-- fin primer contenedor -->
-        <div class="contenedor__primero">
-            <div class="contenedor__primero__imagen">
-                <img src="img/imagen1.jpg" alt="Banner Uno">
+        <div class="contenedor__secundario">
+            <div class="contenedor__secundario--maxwidth">
+                <div class="contenedor__secundario__imagen">
+                    <img src="img/imagen1.jpg" alt="Banner Uno">
+                </div>
+                <div class="contenedor__secundario__info">
+                    <h2>Mis Proyectos Web</h2>
+                    <p>Te comparto los proyectos web que he realizado separados segun estudios o trabajo:</p>
+                    <ol class="contenedor__secundario__lista">
+                        <li><a href="" id="pixel">Pixel</a></li>
+                        <li><a href="" id="udemy">Udemy</a></li>
+                        <li><a href="" id="linkedin">LinkedIn</a></li>
+                        <li><a href="" id="ulacit">ULACIT</a></li>
+                        <li><a href="" id="freelancer">Freelancer</a></li>
+                    </ol>
+                </div>
+
+                <div class="contenedor__cursoPixel">
+                    <!--enlaces-->
+                    <a href="https://teledolar.com/" target="_blank">TeleDolar</a>
+                </div><!--fin contenedor-->
+                <div class="contenedor__cursoUdemy">
+                    <!--enlaces-->
+                    <a href="frontEndStore" target="_blank">Front End Store</a>
+                </div><!--fin contenedor-->
+                <div class="contenedor__cursoLinkedin">
+                    <!--enlaces-->
+                    <a href=""></a>
+                </div><!--fin contenedor-->
+                <div class="contenedor__cursoUlacit">
+                    <!--enlaces-->
+                    <a href=""></a>
+                </div><!--fin contenedor-->
+                <div class="contenedor__freelancer">
+                    <!--enlaces-->
+                    <a href="https://redadvisory.net/" target="_blank">Red Advisory</a>
+                    <p>Descripcion:</p>
+                    <p>Página web elaborada para empresa de contabilidad, legal e impuestos</p>
+                    <p>Desarrollado en WordPress</p>
+                </div><!--fin contenedor-->
+
             </div>
-            <div class="contenedor__primero__info">
-                <h2>Mis Proyectos Web</h2>
-                <p>Te comparto los proyectos web que he realizado separados segun estudios o trabajo:</p>
-                <ol class="contenedor__primero__lista">
-                    <li><a href="" id="pixel">Pixel</a></li>
-                    <li><a href="" id="udemy">Udemy</a></li>
-                    <li><a href="" id="linkedin">LinkedIn</a></li>
-                    <li><a href="" id="ulacit">ULACIT</a></li>
-                    <li><a href="" id="freelancer">Freelancer</a></li>
-                </ol>
-            </div>
-            <div class="contenedor__cursoPixel">
-                <!--enlaces-->
-                <a href="https://teledolar.com/" target="_blank">TeleDolar</a>
-            </div><!--fin contenedor-->
-            <div class="contenedor__cursoUdemy">
-                <!--enlaces-->
-                <a href="frontEndStore" target="_blank">Front End Store</a>
-            </div><!--fin contenedor-->
-            <div class="contenedor__cursoLinkedin">
-                <!--enlaces-->
-                <a href=""></a>
-            </div><!--fin contenedor-->
-            <div class="contenedor__cursoUlacit">
-                <!--enlaces-->
-                <a href=""></a>
-            </div><!--fin contenedor-->
-            <div class="contenedor__freelancer">
-                <!--enlaces-->
-                <a href="https://redadvisory.net/" target="_blank">Red Advisory</a>
-                <p>Descripcion:</p>
-                <p>Página web elaborada para empresa de contabilidad, legal e impuestos</p>
-                <p>Desarrollado en WordPress</p>
-            </div><!--fin contenedor-->
-        </div> <!-- fin primer contenedor -->
+        </div> <!-- fin segundo contenedor -->
     </div>
 </body>
 </html>
