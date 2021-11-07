@@ -50,31 +50,31 @@
                     <h2>Mis Proyectos Web</h2>
                     <p>Te comparto los proyectos web que he realizado separados segun estudios o trabajo:</p>
                     <ol class="contenedor__secundario__lista">
-                        <li><a href="" id="pixel">Pixel</a></li>
-                        <li><a href="" id="udemy">Udemy</a></li>
-                        <li><a href="" id="linkedin">LinkedIn</a></li>
-                        <li><a href="" id="ulacit">ULACIT</a></li>
-                        <li><a href="" id="freelancer">Freelancer</a></li>
+                        <li><a onclick="pixelFunc()" href="#pixel">Pixel</a></li>
+                        <li><a onclick="udemyFunc()" href="#udemy">Udemy</a></li>
+                        <li><a onclick="linkedinFunc()" href="#linkedin">LinkedIn</a></li>
+                        <li><a onclick="ulacitFunc()" href="#ulacit">ULACIT</a></li>
+                        <li><a onclick="freelanceFunc()" href="#freelancer">Freelancer</a></li>
                     </ol>
                 </div>
 
-                <div class="contenedor__cursoPixel">
+                <div class="contenedor__curso" id="pixel">
                     <!--enlaces-->
                     <a href="https://teledolar.com/" target="_blank">TeleDolar</a>
                 </div><!--fin contenedor-->
-                <div class="contenedor__cursoUdemy">
+                <div class="contenedor__curso" id="udemy">
                     <!--enlaces-->
                     <a href="frontEndStore" target="_blank">Front End Store</a>
                 </div><!--fin contenedor-->
-                <div class="contenedor__cursoLinkedin">
+                <div class="contenedor__curso" id="linkedin">
                     <!--enlaces-->
                     <a href=""></a>
                 </div><!--fin contenedor-->
-                <div class="contenedor__cursoUlacit">
+                <div class="contenedor__curso" id="ulacit">
                     <!--enlaces-->
                     <a href=""></a>
                 </div><!--fin contenedor-->
-                <div class="contenedor__freelancer">
+                <div class="contenedor__curso" id="freelancer">
                     <!--enlaces-->
                     <a href="https://redadvisory.net/" target="_blank">Red Advisory</a>
                     <p>Descripcion:</p>
@@ -85,5 +85,53 @@
             </div>
         </div> <!-- fin segundo contenedor -->
     </div>
+
+<!-- scripts -->
+    <script>
+        function pixelFunc() {
+            var x = document.getElementById("pixel");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function udemyFunc() {
+            var x = document.getElementById("udemy");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function linkedinFunc() {
+            var x = document.getElementById("linkedin");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function ulacitFunc() {
+            var x = document.getElementById("ulacit");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function freelanceFunc() {
+            var x = document.getElementById("freelancer");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -98,6 +98,7 @@ h3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    padding-top: 2rem;
 }
 .contenedor__secundario__imagen{
     width: 100%;
@@ -119,4 +120,9 @@ h3{
     background-color: var(--negro);
     border: var(--quinto) solid 1px;
     padding: 1rem 3rem;
+}
+/* Curso */
+.contenedor__curso{
+    display: none;
+    height: 10vh;
 }
