@@ -1,0 +1,18 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Proyecto con Gulp, SASS, HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Pablo Soto",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}
