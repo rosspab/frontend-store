@@ -41,10 +41,10 @@
                 <h2>Costa Rica</h2>
             </div>
         </div> <!-- fin primer contenedor -->
-        <div class="contenedor__secundario">
+        <div class="contenedor__secundario" id="proyectos">
             <div class="contenedor__secundario--maxwidth">
                 <div class="contenedor__secundario__imagen">
-                    <img src="img/imagen1.jpg" alt="Banner Uno">
+                    <img src="img/imagen2.jpg" alt="Banner Uno">
                 </div>
                 <div class="contenedor__secundario__info">
                     <h2>Mis Proyectos Web</h2>
@@ -61,10 +61,16 @@
                 <div class="contenedor__curso" id="pixel">
                     <!--enlaces-->
                     <a href="https://teledolar.com/" target="_blank">TeleDolar</a>
+                    <p>Descripcion:</p>
+                    <p>Desarrollo completo para la empresa TeleDolar Costa Rica</p>
+                    <p>Desarrollado en WordPress</p>
                 </div><!--fin contenedor-->
                 <div class="contenedor__curso" id="udemy">
                     <!--enlaces-->
                     <a href="frontEndStore" target="_blank">Front End Store</a>
+                    <p>Descripcion:</p>
+                    <p>Proyecto desarrollado en el curso de udemy de desarrollo web impartido por el docente Juan Pablo de la Torre</p>
+                    <p>HTML5/CSS3</p>
                 </div><!--fin contenedor-->
                 <div class="contenedor__curso" id="linkedin">
                     <!--enlaces-->
@@ -84,52 +90,71 @@
 
             </div>
         </div> <!-- fin segundo contenedor -->
+
+        <!-- contacto -->
+        <div class="contenedor__tercero" id="contacto">
+            <div class="contenedor__tercero__imagen">
+                <img src="img/imagen1.jpg" alt="Banner Uno">
+            </div>
+            <div class="contenedor__tercero__formulario">
+                <form action="" class="formulario">
+                    <input type="text" placeholder="Nombre y Apellido">
+                    <input type="number" placeholder="Número de celular (solo números y sin guines)">
+                    <input type="email" placeholder="Correo Electrónico">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                </form>
+            </div>
+        </div> <!-- fin primer contenedor -->
     </div>
+    <footer>
+        <p>Sitio desarrollado por Pablo Andrés Soto De Carlo 2021</p>
+    </footer>
 
 <!-- scripts -->
     <script>
         function pixelFunc() {
             var x = document.getElementById("pixel");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         }
 
         function udemyFunc() {
             var x = document.getElementById("udemy");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         }
 
         function linkedinFunc() {
             var x = document.getElementById("linkedin");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         }
 
         function ulacitFunc() {
             var x = document.getElementById("ulacit");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         }
 
         function freelanceFunc() {
             var x = document.getElementById("freelancer");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         }
     </script>

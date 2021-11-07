@@ -7,6 +7,7 @@
     --quinto: #F8D252;
     --negro: #000;
     --texto: #343434;
+    --grisado: rgba(204, 204, 204, 0.73);
 
     --fuentePrincipal: 'Poppins', sans-serif;
 }
@@ -124,5 +125,9 @@ h3{
 /* Curso */
 .contenedor__curso{
     display: none;
-    height: 10vh;
+    border: 2px solid var(--tercero);
+    background-color: var(--grisado);
+    color: var(--texto);
+    margin-bottom: 5rem;
+    padding: 1rem;
 }
