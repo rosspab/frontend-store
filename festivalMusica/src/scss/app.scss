@@ -1,0 +1,9 @@
+/* vieja forma de importar */
+/*
+@import 'base/variables';
+@import 'contenido/contenido';
+*/
+
+/* nueva version de importart */
+@use "base";
+@use "layout";
