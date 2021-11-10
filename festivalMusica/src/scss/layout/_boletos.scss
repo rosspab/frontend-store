@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boletos {
+    padding: 5rem 0;
+    h3{
+        text-align: center;
+        color: v.$blanco;
+    }
+    contenedor-boletos{
+        @include m.tablet {
+            @include m.grid(2, 5rem);
+        }
+    }
+}
+.pase{
+    &-header{
+        background-color: v.$rosa;
+
+    }
+    &-body{
+
+    }
+    &-footer{
+        background-color: v.$morado;
+    }
+}
