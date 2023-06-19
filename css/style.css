@@ -91,6 +91,11 @@ main {
     border: 1px solid #243119;
     text-align: center;
     margin-right: 1rem;
+    overflow-y: scroll;
+    height: 45rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .project:last-of-type {
     margin-right: 0;
@@ -106,14 +111,37 @@ main {
     width: 30%;
     margin: 1rem auto;
     color: #F0A202;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .project a:hover {
     color: #fff;
     background-color: #1072A7;
 }
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: stretch;
+}  
 footer {
     width: 80%;
     margin: 0 auto;
+}
+.boton_arriba {
+    position: relative;
+    float: right;
+    right: -11rem;
+    margin-bottom: 5rem;
+}
+.boton_arriba:hover {
+    margin-top: 1rem;
+}
+.fa-2xl {
+    font-size: 5em!important;
 }
 @media (max-width: 480px){
     .portfolio_flex {
