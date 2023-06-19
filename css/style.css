@@ -1,133 +1,126 @@
-:root{
-    --primario: #fff;
-    --secundario: #57A5FF;
-    --tercero: #E0844E;
-    --terceroOscuro: #b45a25;
-    --cuarto: #8A4AE0;
-    --quinto: #F8D252;
-    --negro: #000;
-    --texto: #343434;
-    --grisado: rgba(204, 204, 204, 0.73);
-
-    --fuentePrincipal: 'Poppins', sans-serif;
-}
-html {
+html{
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: rgb(249,244,216);
 }
-*, *:before, *:after{
+*, *:before, *:after {
     box-sizing: inherit;
 }
-
-/*Globales*/
 body{
-    background: var(--primario);
-    font-size: 1.6rem;
-    line-height: 1.5;
+    font-size: 16px; /* 1rem = 10px */
 }
-p{
-    font-size: 1.8rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--blanco);
-}
-a{
+a {
     text-decoration: none;
 }
-img{
-    width: 100%;
+nav {
+    width: 40%;
 }
-.contenedor{
-    margin: 0 auto;
-}
-h1,h2,h3{
-    font-family: var(--fuentePrincipal);
-    text-align: center;
-    color: var(--secundario)
-}
-h1{
-    font-size: 4rem;
-}
-h2{
-    font-size: 3.2rem;
-}
-h3{
-    font-size: 2.4rem;
-}
-/* header */
-.menu{
+header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: var(--cuarto);
-    padding: 2rem;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.menu__navegacion a{
-    text-decoration: none;
-    border: 1px solid var(--tercero);
-    background-color: var(--quinto);
-    color: #494949;
-    padding: 1rem 3rem;
-}
-.menu__navegacion a:hover{
-    background-color: var(--terceroOscuro);
-    color: var(--primario);
+header img {
+    width: 30%;
 }
 
-/*Contenedores*/
-.contenedor__primero{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 120rem;
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted #000;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+main {
+    max-width: 80%;
     margin: 0 auto;
 }
-.contenedor__primero__info{
+.about-me h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Apple Chancery";
+}
+.my-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.componente_contacto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
 }
-.contenedor__primero__info h2{
-    font-size: 1.4rem;
-    color: var(--texto);
+.componente_contacto a, .componente_contacto p {
+    color: #1072A7;
 }
-.contenedor__secundario{
-    background-color: var(--secundario);
+.componente_contacto a:hover, .componente_contacto p:hover {
+    color: #F0A202;
 }
-.contenedor__secundario--maxwidth{
-    max-width: 120rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding-top: 2rem;
-}
-.contenedor__secundario__imagen{
-    width: 100%;
-}
-.contenedor__secundario__info h2 {
-    color: var(--quinto);
-}
-.contenedor__secundario__lista {
+.portfolio_flex{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 4rem;
+    justify-content: space-between;
+    align-items: center;
 }
-.contenedor__secundario__lista li{
-    list-style: none;
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #243119;
+    text-align: center;
+    margin-right: 1rem;
 }
-.contenedor__secundario__lista li a{
-    color: var(--quinto);
-    background-color: var(--negro);
-    border: var(--quinto) solid 1px;
-    padding: 1rem 3rem;
+.project:last-of-type {
+    margin-right: 0;
 }
-/* Curso */
-.contenedor__curso{
-    display: none;
-    border: 2px solid var(--tercero);
-    background-color: var(--grisado);
-    color: var(--texto);
-    margin-bottom: 5rem;
-    padding: 1rem;
+.project img {
+    max-width: 60%;
+    margin: 0 auto;
+    max-height: 20rem;
+}
+.project a {
+    padding: 1rem .5rem;
+    border: 1px solid #1072A7;
+    width: 30%;
+    margin: 1rem auto;
+    color: #F0A202;
+}
+.project a:hover {
+    color: #fff;
+    background-color: #1072A7;
+}
+footer {
+    width: 80%;
+    margin: 0 auto;
+}
+@media (max-width: 480px){
+    .portfolio_flex {
+        flex-direction: column;
+    }
+    .project {
+        margin-bottom: 1rem;
+    }
+    header, header ul {
+        flex-direction: column;
+    }
+    .my-data {
+        flex-direction: column;
+    }
+    .about-me h1 {
+        font-size: 2rem;
+    }
 }
