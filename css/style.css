@@ -36,6 +36,14 @@ header ul {
     align-items: center;
 }
 
+header ul a {
+    color: #243119;
+}
+
+header ul a:hover {
+    color: #F0A202;
+}
+
 hr {
     border: none;
     border-top: 1px dotted #000;
