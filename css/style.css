@@ -166,4 +166,7 @@ footer {
     .about-me h1 {
         font-size: 2rem;
     }
+    section#aboutMe {
+        margin-top: 15vh;
+    }
 }
