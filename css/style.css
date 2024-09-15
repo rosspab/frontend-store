@@ -25,7 +25,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: rgb(249,244,216);
 }
 header img {
@@ -98,11 +97,11 @@ main {
     border: 1px solid #243119;
     text-align: center;
     margin-right: 1rem;
-    overflow-y: scroll;
     height: 45rem;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    overflow-y: hidden;
 }
 .project:last-of-type {
     margin-right: 0;
